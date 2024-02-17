@@ -1,0 +1,42 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Blalock et al. 2020]{blalock2020}
+\abntrefinfo{Blalock et al.}{BLALOCK et al.}{2020}
+{BLALOCK, D. et al. \emph{What is the state of neural network pruning?} 2020.
+Acesso em: 8 jul. 2021.
+Dispon{\'\i}vel em: \url{https://arxiv.org/abs/2003.03033}.}
+
+\bibitem[Fernandes e Kung 2021]{fernandes2021}
+\abntrefinfo{Fernandes e Kung}{FERNANDES; KUNG}{2021}
+{FERNANDES, M. A.~C.; KUNG, H.~T. A novel training strategy for deep learning model compression applied to viral classifications. In:  IEEE INTERNATIONAL JOINT CONFERENCE ON NEURAL NETWORKS (IJCNN). [S.l.], 2021.}
+
+\bibitem[nvidia 2015]{nvidea2015}
+\abntrefinfo{nvidia}{NVIDIA}{2015}
+{NVIDIA. \emph{GPU-Based Deep Learning Inference: A Performance and Power Analysis}. 2015.
+Acesso em: 10 jul. 2021.
+Dispon{\'\i}vel em: \url{https://www.nvidia.com/content/tegra/embedded-systems/pdf/jetson\_tx1\_whitepaper.pdf}.}
+
+\bibitem[Rakin et al. 2018]{Quantization2}
+\abntrefinfo{Rakin et al.}{RAKIN et al.}{2018}
+{RAKIN, A.~S. et al. Defend deep neural networks against adversarial examples via fixed and dynamic quantized activation functions.
+\emph{arXiv preprint arXiv:1807.06714}, 2018.}
+
+\bibitem[Tung e Mori 2020]{PruneQuantization1}
+\abntrefinfo{Tung e Mori}{TUNG; MORI}{2020}
+{TUNG, F.; MORI, G. Deep neural network compression by in-parallel pruning-quantization.
+\emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~42, n.~3, p. 568--579, 2020.}
+
+\bibitem[Wang et al. 2019]{Quantization1}
+\abntrefinfo{Wang et al.}{WANG et al.}{2019}
+{WANG, K. et al. Haq: Hardware-aware automated quantization with mixed precision. In:  \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}. [S.l.: s.n.], 2019. p. 8612--8620.}
+
+\bibitem[{Zhe} et al. 2019]{Quantization4}
+\abntrefinfo{{Zhe} et al.}{{Zhe} et al.}{2019}
+{{Zhe}, W. et al. Optimizing the bit allocation for compression of weights and activations of deep neural networks. In:  \emph{2019 IEEE International Conference on Image Processing (ICIP)}. [S.l.: s.n.], 2019. p. 3826--3830.}
+
+\end{thebibliography}

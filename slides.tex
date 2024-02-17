@@ -1,0 +1,113 @@
+%--------------------------------------------%
+% Template Beamer para Apresentações da UFRN %
+% by alcemygvseverino@gmail.com              %
+% Baseado em MIT Beamer Template			 %
+% versao 1.1								 %
+% Atualizado em 14/05/2016					 %
+%--------------------------------------------%
+\documentclass[handout,t]{beamer}
+% Para alterar a linguagem do documento
+\usepackage[portuges]{babel}
+% Para aceitar caracteres especias deretamente do teclado
+\usepackage[utf8]{inputenc}
+% Para seguir as normas da ABNT de citacao e referencias
+\usepackage[alf]{abntex2cite}
+% Para incluir figuras
+\usepackage{graphicx}
+% Para melhor ajuste da posisao das figuras
+\usepackage{float}
+% Para ajustar as dimensoes do layout da pagina
+\usepackage{geometry}
+% Para formatar estrutura e informacoes de formulas matematicas
+\usepackage{amsmath}
+% Para incluir simbolos especiais em formulas matematicas
+\usepackage{amssymb}
+% Para incluir links nas referencias
+\usepackage{url}
+% Para incluir paginas de documentos .pdf externos
+\usepackage{pgfpages}
+% Para ajustar o estilo dos contadores
+\usepackage{enumerate}
+% Para modificar a cor do texto
+\usepackage{color}
+% Para incluir condicoes
+\usepackage{ifthen}
+% Para colocar legendas em algo que nao e float
+\usepackage{capt-of}
+\usepackage{subcaption}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{diagbox}
+\usepackage{changepage}
+\usepackage{paralist}
+\usepackage{tabularx}
+%\usepackage{subfigure}
+% Para definir o tema do slide
+\usetheme{Berlin}
+% Para difinir cores e background
+\usecolortheme{ufrn}
+% Para numerar as figuras
+\setbeamertemplate{caption}[numbered]
+
+% Título
+\title[Trabalho de Qualificação]{
+	Compressão Consciente de Modelos de Redes Neurais Profundas Baseada em Poda Seguida de Quantização}
+% Data
+\date{
+	04 de Agosto de 2023}
+% Autores
+\author[Mateus Arnaud Santos de Sousa Goldbarg]{
+	Mateus Arnaud Santos de Sousa Goldbarg \inst{1}\\
+	\vspace{0.14cm}
+	Prof. Dr. Marcelo Augusto Costa Fernandes \inst{2}
+    \vspace{0.14cm}\\
+	Prof. Dr. Sérgio Natan Silva \inst{3}}
+% Instituto
+\institute[INSTITUTO]{
+	\inst{1}%
+	\url{mateus.goldbarg@dca.ufrn.br}\\
+	\vspace{0.15cm}
+	\inst{1,2,3}%
+	Programa de Pós-graduação em Engenharia Elétrica e de Computação (PPGgEEC)\\
+	Universidade Federal do Rio Grande do Norte}
+% Logo do canto inferior direito
+\pgfdeclareimage[height=0.7cm]{logo_UFRN}{figuras/logo_UFRN}
+\logo{
+	\vspace*{-0.25cm}
+	\pgfuseimage{logo_UFRN}
+	\hspace*{-0.05cm}}
+
+
+\begin{document}
+% Sumário
+\frame{\titlepage}
+\section[]{}
+\begin{frame}{Sumário}
+	\tableofcontents
+\end{frame}
+
+% Introducao
+\include{tex/introducao/introducao}
+
+% Referencial teórico
+\include{tex/referencial/referencial}
+
+% Metodologia
+\include{tex/metodologia/metodologia}
+
+% Resultados
+\include{tex/resultados/resultados}
+
+% Conclusao
+\include{tex/conclusao/conclusao}
+
+% Referencias
+\include{tex/referencias/referencias}
+
+% Agradecimentos
+\section{}
+%\begin{frame}{Agradecimentos}
+%	Agradeço a todos. 	
+%\end{frame}
+
+\end{document}
