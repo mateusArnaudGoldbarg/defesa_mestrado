@@ -42,7 +42,7 @@ O modelo foi definido com a arquitetura VGG16 com duas camadas densas:
     \column{.5\textwidth}
       \scriptsize
       \begin{itemize}
-        \item Entrada($32 \times 3 \times 3$);
+        \item Entrada($32 \times 32 \times 3$);
         \item Conv2D($64 \times 3 \times 3$) e ReLU;
         \item Conv2D($64 \times 3 \times 3$) e ReLU;
         \item MaxPool($2 \times 2$);
@@ -163,7 +163,6 @@ O modelo foi definido com a arquitetura VGG16 com duas camadas densas:
 \begin{frame}{Configurações dos pods}
     Cada pod foi construído com as seguintes características:
     \begin{itemize}
-        \item Máximo de memória em 100MiB;
         \item Máximo de processamento em 100miliCPU;
         \item Nova réplica com 20\% do máximo de processamento;
         \item Máximo de 10 réplicas.
@@ -323,7 +322,7 @@ O modelo foi definido com a arquitetura VGG16 com duas camadas densas:
 \end{frame}
 
 
-\begin{frame}{Infraestrutura}
+\begin{frame}{Resultados}
     \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{figuras/escalonamento.eps}
@@ -331,7 +330,7 @@ O modelo foi definido com a arquitetura VGG16 com duas camadas densas:
     \end{figure}
 \end{frame}
 
-\begin{frame}{Infraestrutura}
+\begin{frame}{Resultados}
     \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{figuras/escalonamento2.eps}
@@ -339,10 +338,10 @@ O modelo foi definido com a arquitetura VGG16 com duas camadas densas:
     \end{figure}
 \end{frame}
 
-\begin{frame}{Infraestrutura}
+\begin{frame}{Resultados}
     \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figuras/escalonamento2.eps}
+    \includegraphics[width=1\textwidth]{figuras/escalonamento3.eps}
     \caption{Comportamento da criação de novas réplicas com o passar do tempo do modelo não comprimido e quantizado em $8$ bits o terceiro perfil de estresse $N_3=250$.}
     \end{figure}
 \end{frame}

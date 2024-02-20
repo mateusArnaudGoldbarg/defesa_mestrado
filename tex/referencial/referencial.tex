@@ -31,6 +31,15 @@ Uma das abordagens convencionais de compressão das redes neurais é a poda (pru
 \end{frame}
 
 \begin{frame}{Compressão consciente por poda}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/prune_scheme.pdf}
+    \caption{Diagrama do loop de aprendizado utilizando poda consciente a cada mini-batch}
+    \end{figure}
+    
+\end{frame}
+
+\begin{frame}{Compressão consciente por poda}
 A estratégia utilizada para escolher quais pesos devem ser removidos é dada por 
 \begin{equation}
     C_k(n) = P(W_k(n),\beta_k) =
@@ -47,14 +56,7 @@ sendo $\sigma_k$ o desvio padrão da $k$-ésima camada e $\alpha$ o valor da agr
 
 \end{frame}
 
-\begin{frame}{Compressão consciente por poda}
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figuras/prune_scheme.pdf}
-    \caption{Diagrama do loop de aprendizado utilizando poda consciente a cada mini-batch}
-    \end{figure}
-    
-\end{frame}
+
 
 
 
@@ -138,7 +140,7 @@ sendo $\sigma_k$ o desvio padrão da $k$-ésima camada e $\alpha$ o valor da agr
 \begin{frame}{Compressão consciente por Poda seguida de Quantização}
     A estratégia utilizada para poda seguida de quantização de pesos é definida por 
     \begin{equation}\label{EqPruningQuantization}
-    C_k(n) = Q\left (  P \left ( W_k(n) , \beta \right ), q'_k \right),
+    C_k(n) = Q\left (  P \left ( W_k(n) , \beta_k \right ), q'_k \right),
     \end{equation}
     onde
     \begin{equation}
